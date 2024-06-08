@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Estado de cuenta</title>
+</head>
+<body>
+
+    <h1> Tú Estado de cuenta
+<script>
+var datos = localStorage.getItem("datos")
+document.write( datos );
+</script>
+</h1>
+<h2 id="ver_saldototal"></h2>
+<br>
+<br>
+<h2 id="ver_saldo"></h2>
+
+  <!-- aqui muestra el saldo con el que empieza la cuenta -->
+    <label for="" >Tú saldo es: </label>
+    <input type="text" name="saldo" id="c1" value= "900" /> 
+
+    <!-- se crea el formulario y los botones de cada operación -->
+    <form action="">
+
+        <h2>Operaciones a realizar </h2>
+
+    <input type="text" name="cantidad1" id="cant" placeholder="Cantidad"/>
+
+<input type="button" value="Retirar" id="retirar" onclick="formularetiro()">
+<input type="button" value="Deposito" id="deposito" onclick="formuladeposito()">
+<input type="button" value="Saldo" id="ver_saldo" onclick="formulaversaldototal()">
+
+
+</h1>
+    </form>
+   
+    <script src="index.js"></script>
+</body>
+</html>
